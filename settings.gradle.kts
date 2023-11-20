@@ -7,3 +7,4 @@
 
 rootProject.name = "usercenter"
 include("user")
+include("gateway")

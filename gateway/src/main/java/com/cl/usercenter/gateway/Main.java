@@ -1,4 +1,4 @@
-package com.cl.usercenter.user;
+package com.cl.usercenter.gateway;
 
 public class Main {
     public static void main(String[] args) {
