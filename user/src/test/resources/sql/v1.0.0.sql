@@ -73,5 +73,5 @@ create or replace trigger trigger_authority_update_datetime
 execute function table_update_datetime();
 
 
-insert ignore into public.account(id, username, password)
+insert ignore into account(id, username, password)
 values ('0', '15828395524', '123456');

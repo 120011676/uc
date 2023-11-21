@@ -23,8 +23,10 @@ repositories {
 extra["springCloudVersion"] = "2022.0.4"
 
 dependencies {
+    implementation("cn.hutool:hutool-crypto:5.8.23")
     implementation("com.baomidou:mybatis-plus-boot-starter:3.5.4.1")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
     compileOnly("org.projectlombok:lombok")
     runtimeOnly("org.postgresql:postgresql")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")

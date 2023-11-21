@@ -1,19 +1,14 @@
 package com.cl.usercenter.user.entity;
 
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import java.time.LocalDateTime;
-
+@EqualsAndHashCode(callSuper = true)
 @Data
 @TableName("account")
-public class AccountEntity {
+public class AccountEntity extends BaseEntity {
     private String id;
     private String username;
     private String password;
-    private LocalDateTime createDatetime;
-    private LocalDateTime updateDatetime;
-    private Boolean enable;
 }
