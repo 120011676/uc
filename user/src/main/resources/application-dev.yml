@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.10.17:5432/uc?currentSchema=public
+    username: ${DATASOURCE_USERNAME:flgmag}
+    password: ${DATASOURCE_PASSWORD:Tyfo@2023}
+  sql:
+    init:
+      schema-locations:
+        - classpath:db/pgsql/schema.sql
+      data-locations:
+        - classpath:db/pgsql/data.sql
+      encoding: UTF-8
