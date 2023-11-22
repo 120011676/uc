@@ -5,6 +5,6 @@
  * For more detailed information on multi-project builds, please refer to https://docs.gradle.org/8.4/userguide/building_swift_projects.html in the Gradle documentation.
  */
 
-rootProject.name = "usercenter"
+rootProject.name = "uc"
 include("user")
 include("gateway")
