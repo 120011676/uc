@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - uri: http://192.168.1.15:8080/
+          predicates:
+            - Path=/aa/**
+          filters:
+            - StripPrefix=1

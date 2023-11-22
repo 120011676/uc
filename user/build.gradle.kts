@@ -4,7 +4,7 @@ plugins {
     id("io.spring.dependency-management") version "1.1.3"
 }
 
-group = "com.cl.usercenter.user"
+group = "com.github.qq120011676.uc"
 version = "0.0.1"
 
 configurations {
