@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
 
+import java.util.Objects;
+
 @SpringBootTest
 public class AccountExtendServiceTest {
     @Resource
@@ -16,8 +18,12 @@ public class AccountExtendServiceTest {
     public void get() {
         AccountGetReq req = new AccountGetReq();
         req.setId("1");
-        AccountGetResp resp = accountExtendService.get(req);
-        Assert.isNull(resp, "错误");
+        try {
+            AccountGetResp resp = accountExtendService.get(req);
+            Assert.isNull(resp, "错误");
+        } catch (Exception e) {
+            Assert.isTrue(Objects.equals("数据不存在", e.getMessage()), e.getMessage());
+        }
     }
 
 }

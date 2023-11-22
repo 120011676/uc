@@ -1,9 +1,7 @@
 package com.github.qq120011676.uc.user.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.cl.usercenter.user.controller.req.*;
 import com.github.qq120011676.uc.user.controller.req.*;
-import com.github.qq120011676.user.controller.req.*;
 import com.github.qq120011676.uc.user.controller.resp.AccountGetResp;
 import com.github.qq120011676.uc.user.controller.resp.AccountLoginNoAuthResp;
 import com.github.qq120011676.uc.user.controller.resp.AccountLoginResp;

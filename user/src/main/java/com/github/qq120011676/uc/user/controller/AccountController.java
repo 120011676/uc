@@ -1,14 +1,12 @@
 package com.github.qq120011676.uc.user.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.cl.usercenter.user.controller.req.*;
 import com.github.qq120011676.uc.user.controller.req.*;
 import com.github.qq120011676.uc.user.controller.resp.AccountGetResp;
 import com.github.qq120011676.uc.user.controller.resp.AccountLoginNoAuthResp;
 import com.github.qq120011676.uc.user.controller.resp.AccountLoginResp;
 import com.github.qq120011676.uc.user.controller.resp.AccountPageResp;
 import com.github.qq120011676.uc.user.service.AccountExtendService;
-import com.github.qq120011676.user.controller.req.*;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotEmpty;
